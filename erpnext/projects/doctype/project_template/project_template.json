@@ -7,7 +7,9 @@
  "engine": "InnoDB",
  "field_order": [
   "project_type",
-  "tasks"
+  "tasks",
+  "project_acceptance_criteria_section",
+  "acceptance_criteria"
  ],
  "fields": [
   {
@@ -23,10 +25,21 @@
    "label": "Tasks",
    "options": "Project Template Task",
    "reqd": 1
+  },
+  {
+   "fieldname": "project_acceptance_criteria_section",
+   "fieldtype": "Section Break",
+   "label": "Project Acceptance Criteria"
+  },
+  {
+   "fieldname": "acceptance_criteria",
+   "fieldtype": "Link",
+   "label": "Acceptance Criteria",
+   "options": "Project Acceptance Criteria Template"
   }
  ],
  "links": [],
- "modified": "2020-04-26 02:23:53.990322",
+ "modified": "2021-09-23 21:30:49.129315",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Project Template",

@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "creation": "2021-09-23 22:46:22.340195",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_deliverables",
+  "deliverable_name",
+  "deliverable_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_deliverables",
+   "fieldtype": "Link",
+   "label": "Project Deliverables",
+   "options": "Project Deliverables"
+  },
+  {
+   "fieldname": "deliverable_name",
+   "fieldtype": "Data",
+   "label": "Deliverable Name"
+  },
+  {
+   "fieldname": "deliverable_type",
+   "fieldtype": "Data",
+   "label": " Deliverable Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-09-23 22:46:22.340195",
+ "modified_by": "Administrator",
+ "module": "Projects",
+ "name": "Project Template Deliverable",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

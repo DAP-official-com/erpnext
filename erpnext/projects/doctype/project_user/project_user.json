@@ -12,8 +12,10 @@
   "full_name",
   "welcome_email_sent",
   "view_attachments",
-  "section_break_5",
-  "project_status"
+  "project_user_detail_section",
+  "role_in_project",
+  "project_status",
+  "section_break_5"
  ],
  "fields": [
   {
@@ -29,6 +31,7 @@
    "fetch_from": "user.email",
    "fieldname": "email",
    "fieldtype": "Read Only",
+   "in_preview": 1,
    "label": "Email"
   },
   {
@@ -37,6 +40,7 @@
    "fieldtype": "Read Only",
    "hidden": 1,
    "in_global_search": 1,
+   "in_preview": 1,
    "label": "Image"
   },
   {
@@ -66,18 +70,33 @@
   },
   {
    "fieldname": "section_break_5",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
   },
   {
    "depends_on": "eval:parent.doctype == 'Project Update'",
    "fieldname": "project_status",
    "fieldtype": "Text",
    "label": "Project Status"
+  },
+  {
+   "fieldname": "project_user_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Project User detail"
+  },
+  {
+   "fieldname": "role_in_project",
+   "fieldtype": "Link",
+   "in_preview": 1,
+   "label": "Role in project",
+   "options": "Project Role",
+   "reqd": 1
   }
  ],
+ "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2020-02-09 23:26:50.321417",
+ "modified": "2021-09-23 23:18:39.276764",
  "modified_by": "Administrator",
  "module": "Projects",
  "name": "Project User",
